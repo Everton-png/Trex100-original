@@ -129,7 +129,7 @@ if (gamestate == "play"){
 }
 
 function obstaculocriar(){
-if (frameCount%60==0)  {
+if (frameCount%80==0)  {
     obstaculo = createSprite (width/600*600,height/600*295,width/600*10,height/600*40)
     obstaculo.velocityX = -4 -((pontos*3)/100)
     obstaculo.scale = 1
