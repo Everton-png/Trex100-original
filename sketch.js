@@ -61,7 +61,7 @@ function setup(){
     createCanvas(windowWidth,windowHeight)
     dinex = createSprite(width/600*52,height/200*90,width/600*20,height/200*50)
     dinex.addAnimation("running",dinexrunning)
-    dinex.scale = 0.6
+    dinex.scale = 0.4
     
     ground = createSprite(width/600*200, height/200*100, width/600*300, height/200*100);
     ground.addImage("ground2.png", groundImage);
@@ -133,6 +133,7 @@ if (frameCount%60==0)  {
     obstaculo = createSprite (width/600*600,height/600*295,width/600*10,height/600*40)
     obstaculo.velocityX = -4 -((pontos*3)/100)
     obstaculo.scale = 1
+    obstaculo.destroy
 
     cactoescolher= Math.round(random(1,6))
     switch (cactoescolher) {
