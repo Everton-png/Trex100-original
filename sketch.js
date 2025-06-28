@@ -205,7 +205,7 @@ if (ground.x < 0) {
 
     pontos = pontos +Math.round(getFrameRate()/60)
 
-    if ((keyDown("w") ||touches.length> 0) && dinex.collide(ground)){
+    if ((keyDown("q") ||touches.length> 0) && dinex.collide(ground)){
 
         dinex.velocityY = -8 
         
